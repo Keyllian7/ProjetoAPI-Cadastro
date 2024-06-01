@@ -7,7 +7,7 @@ const Inputtelefone = document.querySelector(".telefone");
 
 function cadastrar() {
 
-    fetch("http://localhost:8080/cadastrar",
+    fetch("http://localhost:8080/usuarios",
         {
             headers: {
                 'Accept': 'application/json',
