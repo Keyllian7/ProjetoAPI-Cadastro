@@ -5,6 +5,3 @@ Funcionalidades
 Cadastro de novos usuários através de um formulário web.
 Armazenamento das informações de usuário no banco de dados MySQL.
 Interface simples em HTML/CSS/JavaScript para interação com o usuário.
-
-Licença
-Este projeto está licenciado sob a licença MIT - veja o arquivo LICENSE para mais detalhes.
