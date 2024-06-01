@@ -8,29 +8,31 @@ const Inputtelefone = document.querySelector(".telefone");
 function cadastrar() {
 
     fetch("http://localhost:8080/cadastrar",
-    {
-        headers: {
-            'Accept': 'application/json',
-            'Content-Type': 'application/json'
-        },
-        method: "POST",
-        body: JSON.stringify({
-            nome: Inputnome.value,
-            email: Inputemail.value,
-            senha: Inputsenha.value,
-            telefone: Inputtelefone.value
+        {
+            headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json'
+            },
+            method: "POST",
+            body: JSON.stringify({
+                nome: Inputnome.value,
+                email: Inputemail.value,
+                senha: Inputsenha.value,
+                telefone: Inputtelefone.value
+            })
         })
-    })
-    .then(function (res) { console.log(res) })
-    .catch(function (res) { console.log(res) })
+        .then(function (res) { console.log(res) })
+        .catch(function (res) { console.log(res) })
 
 };
 
-function limpar () {
+function limpar() {
+
     Inputnome.value = "";
     Inputemail.value = "";
     Inputsenha.value = "";
     Inputtelefone.value = "";
+    
 };
 
 formulario.addEventListener('submit', function (event) {
@@ -39,4 +41,5 @@ formulario.addEventListener('submit', function (event) {
 
     cadastrar();
     limpar();
+
 });
