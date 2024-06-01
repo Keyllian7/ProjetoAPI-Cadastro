@@ -8,11 +8,11 @@
 		<version>3.3.0</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>keyllian.dev.com</groupId>
-	<artifactId>api-cadastro</artifactId>
+	<groupId>keyllian.dev.projeto</groupId>
+	<artifactId>api</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>api-cadastro</name>
-	<description> API usando Java e Spring Boot para o gerenciamento de cadastro de usuários</description>
+	<name>api</name>
+	<description>API usando Java e Spring Boot para o gerenciamento de cadastro de usuários</description>
 	<properties>
 		<java.version>17</java.version>
 	</properties>

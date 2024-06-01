@@ -1,10 +1,10 @@
-package keyllian.dev.com.api_cadastro;
+package keyllian.dev.projeto.api;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class ApiCadastroApplicationTests {
+class ApiApplicationTests {
 
 	@Test
 	void contextLoads() {
