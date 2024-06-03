@@ -43,3 +43,26 @@ formulario.addEventListener('submit', function (event) {
     limpar();
 
 });
+
+document.getElementById('listar-usuarios').addEventListener('click', listarUsuarios);
+
+function listarUsuarios() {
+    fetch("http://localhost:8080/usuarios", {
+        headers: {
+            'Accept': 'application/json',
+            'Content-Type': 'application/json'
+        },
+        method: "GET"
+    })
+    .then(response => response.json())
+    .then(usuarios => {
+        const usuariosLista = document.getElementById('usuarios-lista');
+        usuariosLista.innerHTML = '';
+        usuarios.forEach(usuario => {
+            const usuarioItem = document.createElement('div');
+            usuarioItem.innerText = `Nome: ${usuario.nome}, Email: ${usuario.email}, Telefone: ${usuario.telefone}`;
+            usuariosLista.appendChild(usuarioItem);
+        });
+    })
+    .catch(error => console.error('Erro ao listar usuários:', error));
+}
